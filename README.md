@@ -15,3 +15,4 @@ This project contains a simple example of deploying an ERC20 token (MyToken.sol)
 | Chain ID     | `688688`                                              |
 | Token Symbol | `PHRS`                                                 |
 | Explorer     | [Pharosscan](https://testnet.pharosscan.xyz/) |
+
