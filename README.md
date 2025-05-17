@@ -46,7 +46,9 @@ npm install
 **3. Create .env file**
 
 ```
-npx hardhat compile
+PRIVATE_KEY=0xYOUR_PRIVATE_KEY
+RPC_URL=https://testnet.dplabs-internal.com/
+
 ```
 **4. Compile the contract**
 
