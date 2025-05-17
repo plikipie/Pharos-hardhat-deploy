@@ -1,18 +1,17 @@
- HEAD
+
 # Pharos-hardhat-deploy
-deploy token with Hardhat on Pharos testnet
+This project contains a simple example of deploying an ERC20 token (MyToken.sol) to the Pharos testnet using Hardhat.
 
-# Sample Hardhat Project
+# General Requirements
+- Node.js/npm (for Truffle and Hardhat)
+- A private key for an account funded with Pharos Tesnet tokens (Faucet).
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+🌐 Pharos Testnet Network Details
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
-```
- Initial commit: deploy token with Hardhat on Pharos testnet
+| Parameter    | Value                                                |
+| ------------ | ---------------------------------------------------- |
+| Network Name | Pharos Tesnet                                   |
+| RPC URL      | `https://testnet.dplabs-internal.com/`                       |
+| Chain ID     | `688688`                                              |
+| Token Symbol | `PHRS`                                                 |
+| Explorer     | [Pharosscan](https://testnet.pharosscan.xyz/) |
