@@ -1,17 +1,18 @@
-const hre = require("hardhat");
-
 async function main() {
-  const MyToken = await hre.ethers.getContractFactory("MyToken");
-  const initialSupply = hre.ethers.parseUnits("1000000", 18); // 1 juta token
-  const token = await MyToken.deploy(initialSupply);
+  const MyToken = await ethers.getContractFactory("MyToken");
+  const initialSupply = ethers.parseUnits("1000000", 18);
 
-  await token.waitForDeployment();
+  const myToken = await MyToken.deploy(initialSupply);
+  await myToken.waitForDeployment();
 
-  console.log(`Token deployed to: ${token.target}`);
+  console.log("MyToken deployed to:", await myToken.getAddress());
+  console.log("Transaction hash:", myToken.deploymentTransaction().hash);
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+main()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
 
